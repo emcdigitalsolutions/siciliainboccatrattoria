@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+     ⚠️  DATI FISCALI: ragione sociale, P.IVA e C.F. non sono ancora stati
+     forniti. In questa pagina compaiono come [DA COMPLETARE]: sono dati
+     OBBLIGATORI per una informativa privacy valida, vanno inseriti PRIMA
+     del go-live. Cercare "[DA COMPLETARE]" per trovarli tutti.
+     ===================================================================== -->
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ===================================================================
+     Google Analytics 4 + Consent Mode v2
+     TODO EMC: sostituire G-XXXXXXXXXX con l'ID di misurazione GA4 reale.
+     Finché resta il segnaposto lo script NON viene caricato (nessuna 404).
+     =================================================================== -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  var GA_ID = 'G-XXXXXXXXXX';
+  var _gaConsent = 'denied';
+  try{ if(localStorage.getItem('siciliainbocca-cookie-consent')==='all') _gaConsent='granted'; }catch(e){}
+  gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':_gaConsent,'wait_for_update':500});
+  if(GA_ID.indexOf('XXXX')<0){
+    var _s=document.createElement('script'); _s.async=true;
+    _s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;
+    document.head.appendChild(_s);
+    gtag('js', new Date());
+    gtag('config', GA_ID, {'anonymize_ip':true});
+  }
+</script>
+<title>Privacy &amp; Cookie Policy — Sicilia in Bocca · Campobello di Licata</title>
+<meta name="description" content="Informativa privacy e cookie policy del sito della trattoria Sicilia in Bocca di Campobello di Licata (AG), ai sensi del Regolamento (UE) 2016/679 (GDPR).">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://www.siciliainboccacampobello.it/privacy.html">
+<meta name="theme-color" content="#3A2015">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Karla:wght@300;400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+/* ==========================================================================
+   SICILIA IN BOCCA — PRIVACY & COOKIE POLICY
+   Stessa palette, stessi font e stessi ornamenti di index.html / menu.html.
+   ========================================================================== */
+:root{
+  --limone:#F2C230; --oro:#F0C419; --oro-scuro:#B8890C;
+  --peperone:#C8102E; --peperone-scuro:#9C0A22;
+  --foglia:#1E7A3C; --foglia-scura:#14562A;
+  --legno:#5A3620; --legno-scuro:#3A2015;
+  --crema:#F7EFDC; --crema-chiara:#FCF7EA; --pietra:#EEE3C9;
+  --inchiostro:#2E1A10; --muted:#7C6350; --linea:rgba(90,54,32,.16);
+  --grana:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.05'/%3E%3C/svg%3E");
+  --maiolica:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='18' viewBox='0 0 48 18'%3E%3Cpath d='M12 2.6 18.4 9 12 15.4 5.6 9Z' fill='%23F0C419'/%3E%3Cpath d='M36 2.6 42.4 9 36 15.4 29.6 9Z' fill='%231E7A3C'/%3E%3Ccircle cx='24' cy='9' r='2.6' fill='%23C8102E'/%3E%3Ccircle cx='0' cy='9' r='2.6' fill='%23C8102E'/%3E%3Ccircle cx='48' cy='9' r='2.6' fill='%23C8102E'/%3E%3C/svg%3E");
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:'Karla',system-ui,sans-serif;color:var(--inchiostro);background:var(--crema);line-height:1.75;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;background-image:var(--grana);pointer-events:none;z-index:1;opacity:.9;mix-blend-mode:multiply}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--peperone);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{font-family:'Fraunces','Georgia',serif;color:var(--legno-scuro);line-height:1.15;letter-spacing:-.012em;font-weight:700}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px;position:relative;z-index:2}
+
+/* header */
+header{position:sticky;top:0;z-index:60;background:rgba(247,239,220,.95);backdrop-filter:blur(14px);
+  box-shadow:0 10px 28px -24px rgba(58,32,21,.9)}
+header::after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background-image:var(--maiolica);background-size:auto 5px;opacity:.9}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;height:66px}
+.brand{display:flex;align-items:center;gap:11px}
+.brand img{width:42px;height:42px;object-fit:contain;filter:drop-shadow(0 4px 8px rgba(58,32,21,.25))}
+.brand .b1{font-family:'Fraunces',serif;font-weight:700;font-size:19px;color:var(--legno-scuro);line-height:1;display:block}
+.brand .b1 em{font-family:'Caveat',cursive;font-style:normal;color:var(--peperone);font-size:21px;padding:0 2px}
+.brand .b2{font-size:8px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--oro-scuro);margin-top:4px;display:block}
+.back{display:inline-flex;align-items:center;gap:8px;color:var(--legno-scuro);font-size:13.4px;font-weight:600}
+.back svg{width:16px;height:16px}
+.back:hover{color:var(--peperone);text-decoration:none}
+
+/* intestazione documento */
+.phero{padding:46px 0 26px;background:radial-gradient(115% 90% at 15% 0%,#FDF8EC 0%,var(--crema) 52%,var(--pietra) 100%);
+  position:relative;overflow:hidden}
+.phero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background-image:var(--maiolica);background-size:auto 6px;opacity:.8}
+.eyebrow{font-family:'Caveat',cursive;font-weight:700;font-size:clamp(23px,2.4vw,28px);color:var(--peperone);line-height:1;display:block;transform:rotate(-1.6deg)}
+.phero h1{font-size:clamp(32px,5.4vw,50px);margin-top:10px;letter-spacing:-.026em}
+.phero .upd{margin-top:14px;color:var(--muted);font-size:14px;max-width:620px}
+
+/* documento */
+.doc{background:var(--crema-chiara);border:1px solid var(--linea);border-radius:22px;padding:8px 40px 36px;
+  margin:34px 0 56px;box-shadow:0 30px 60px -40px rgba(58,32,21,.5)}
+.sec{padding:26px 0;border-bottom:1px solid var(--linea)}
+.sec:last-child{border-bottom:none}
+.sec h2{font-size:clamp(20px,2.2vw,24px);display:flex;align-items:baseline;gap:12px}
+.sec h2 .n{font-family:'Fraunces',serif;font-style:italic;font-weight:500;color:var(--oro-scuro);font-size:.78em}
+.sec h3{font-size:16.5px;margin:20px 0 4px;color:var(--peperone-scuro)}
+.sec p,.sec li{font-size:14.8px;color:#4C3524;margin-top:10px}
+.sec ul{padding-left:20px;margin-top:6px}
+.sec li{margin-top:6px}
+.sec li::marker{color:var(--oro-scuro)}
+strong{color:var(--legno-scuro)}
+.tbl{width:100%;border-collapse:collapse;margin-top:14px;font-size:13.8px}
+.tbl th,.tbl td{text-align:left;padding:11px 13px;border:1px solid var(--linea);vertical-align:top;color:#4C3524}
+.tbl th{background:var(--pietra);color:var(--legno-scuro);font-weight:700;font-family:'Karla',sans-serif}
+.box{background:rgba(242,194,48,.16);border:1px solid rgba(184,137,12,.34);border-left:4px solid var(--oro-scuro);
+  border-radius:0 16px 16px 0;padding:15px 20px;margin-top:16px;font-size:14px;color:#54381F}
+.box p{margin-top:0;font-size:14px}
+.box p + p{margin-top:8px}
+.todo{color:var(--peperone-scuro);font-style:italic;font-weight:700;background:rgba(200,16,46,.08);
+  padding:1px 7px;border-radius:5px;white-space:nowrap}
+code{font-family:ui-monospace,'SFMono-Regular',Consolas,monospace;font-size:.88em;background:var(--pietra);
+  border:1px solid var(--linea);border-radius:5px;padding:1px 6px;color:var(--legno-scuro);overflow-wrap:anywhere;
+  -webkit-box-decoration-break:clone;box-decoration-break:clone}
+
+/* footer (identico a index.html / menu.html) */
+footer{background:var(--legno-scuro);color:#CDB896;padding:0 0 26px;position:relative;z-index:2}
+.foot-top{height:8px;background-image:var(--maiolica);background-size:auto 8px}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:38px;padding:48px 0 34px}
+.foot-logo img{width:112px;margin-bottom:14px}
+.foot-logo p{font-size:14px;line-height:1.7;max-width:330px}
+/* Il motto della casa: firma che chiude ogni pagina. Specificità .foot-logo .foot-motto
+   perché altrimenti vincerebbe .foot-logo p (0-1-1) sulla dimensione del testo. */
+.foot-logo .foot-motto{position:relative;font-family:'Fraunces',serif;font-style:italic;font-weight:500;
+  font-size:15.8px;line-height:1.56;color:#F2DDB2;max-width:330px;margin-bottom:15px;padding-left:16px}
+.foot-logo .foot-motto::before{content:"";position:absolute;left:0;top:3px;bottom:3px;width:2px;border-radius:2px;
+  background:linear-gradient(180deg,var(--limone),rgba(242,194,48,0))}
+.socials-f{display:flex;gap:11px;margin-top:18px}
+.socials-f a{width:38px;height:38px;border-radius:50%;border:1px solid rgba(205,184,150,.28);display:grid;place-items:center;color:#CDB896;transition:.3s}
+.socials-f a:hover{background:var(--limone);border-color:var(--limone);color:var(--legno-scuro)}
+.socials-f svg{width:17px;height:17px}
+footer h4{color:#FBF3E0;font-size:15px;margin-bottom:15px}
+footer ul{list-style:none}
+footer li{margin-bottom:10px;font-size:14px}
+footer a{color:#CDB896;transition:color .25s}
+footer a:hover{color:var(--limone)}
+.ci{display:flex;gap:10px;align-items:flex-start}
+.ci svg{width:16px;height:16px;flex:none;margin-top:4px;color:var(--oro-scuro)}
+.ci a,.ci span{overflow-wrap:anywhere}
+.foot-legal{border-top:1px solid rgba(205,184,150,.16);padding-top:20px;font-size:12.2px;color:#A78E70}
+.foot-legal a{color:#A78E70;text-decoration:underline}
+.foot-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-top:16px;font-size:12.2px}
+.emc-link{display:inline-flex;align-items:center;gap:9px;color:#A78E70;opacity:.55;transition:opacity .3s;font-size:11px}
+.emc-link:hover{opacity:1;text-decoration:none}
+
+/* cookie banner */
+.cookie-banner{position:fixed;left:0;right:0;bottom:0;z-index:420;background:var(--legno-scuro);color:#DCC9A9;padding:16px 22px;
+  display:none;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;box-shadow:0 -12px 34px -14px rgba(0,0,0,.6)}
+.cookie-banner::before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background-image:var(--maiolica);background-size:auto 5px}
+.cookie-banner.show{display:flex}
+.cookie-banner p{font-size:12.8px;line-height:1.55;max-width:620px}
+.cookie-banner a{color:var(--limone);text-decoration:underline}
+.cookie-actions{display:flex;gap:10px;flex-wrap:wrap}
+.cookie-actions button{cursor:pointer;border:none;font-family:'Karla',sans-serif;font-size:12px;font-weight:700;letter-spacing:.06em;
+  text-transform:uppercase;padding:11px 20px;border-radius:999px;transition:.3s}
+.ck-nec{background:transparent;color:#DCC9A9;border:1px solid rgba(220,201,169,.4)!important}
+.ck-nec:hover{background:rgba(220,201,169,.12)}
+.ck-all{background:var(--limone);color:var(--legno-scuro)}
+.ck-all:hover{background:#fff}
+
+@media(max-width:760px){
+  .doc{padding:6px 22px 28px;border-radius:18px}
+  .foot-grid{grid-template-columns:1fr;gap:28px;padding:40px 0 28px}
+  .brand .b2{display:none}
+  .back span{display:none}
+  /* la tabella diventa una pila di schede: l'intestazione sparisce e ogni
+     cella porta la propria etichetta, altrimenti si perde il significato. */
+  .tbl,.tbl tbody,.tbl tr,.tbl th,.tbl td{display:block;width:100%}
+  .tbl tr{border:1px solid var(--linea);border-radius:14px;overflow:hidden;margin-top:12px}
+  .tbl tr:first-child{display:none}
+  .tbl td{border:none;border-bottom:1px solid var(--linea);padding:13px 15px}
+  .tbl tr td:last-child{border-bottom:none;background:rgba(238,227,201,.42)}
+  .tbl td::before{display:block;font-family:'Karla',sans-serif;font-size:10.5px;letter-spacing:.17em;
+    text-transform:uppercase;font-weight:700;color:var(--oro-scuro);margin-bottom:4px}
+  .tbl td:first-child::before{content:"Finalità"}
+  .tbl td:last-child::before{content:"Base giuridica"}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+}
+@media print{
+  header,.cookie-banner,.back{display:none!important}
+  body{background:#fff}
+  .doc{box-shadow:none;border:none;padding:0}
+  .sec{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<!-- ======================= HEADER ======================= -->
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Sicilia in Bocca — torna alla home">
+      <img src="img/marchio.png" alt="Marchio Sicilia in Bocca" width="120" height="120">
+      <span>
+        <span class="b1">Sicilia <em>in</em> Bocca</span>
+        <span class="b2">Cucina Tipica Tradizionale</span>
+      </span>
+    </a>
+    <a class="back" href="index.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      <span>Torna al sito</span>
+    </a>
+  </div>
+</header>
+
+<!-- ======================= INTESTAZIONE ======================= -->
+<section class="phero">
+  <div class="wrap">
+    <span class="eyebrow">Informativa</span>
+    <h1>Privacy &amp; Cookie Policy</h1>
+    <p class="upd">Informativa resa ai sensi degli artt. 13 e 14 del Regolamento (UE) 2016/679 (GDPR) e del D.Lgs. 196/2003 come modificato dal D.Lgs. 101/2018. Ultimo aggiornamento: settembre 2026.</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="doc">
+
+    <div class="sec">
+      <h2><span class="n">01</span> Titolare del trattamento</h2>
+      <p>Il Titolare del trattamento dei dati personali raccolti tramite questo sito è la trattoria <strong>Sicilia in Bocca</strong>, con sede in Corso Garibaldi 285, 92023 Campobello di Licata (AG).</p>
+      <!-- Dati fiscali NON forniti dal cliente: obbligatori per l'informativa.
+           Sostituire i tre segnaposto qui sotto prima del go-live. -->
+      <ul>
+        <li>Ragione sociale: <span class="todo">[DA COMPLETARE]</span></li>
+        <li>Partita IVA: <span class="todo">[DA COMPLETARE]</span></li>
+        <li>Codice Fiscale: <span class="todo">[DA COMPLETARE]</span></li>
+        <li>Email: <a href="mailto:siciliainboccatrattoria@gmail.com">siciliainboccatrattoria@gmail.com</a></li>
+        <li>Telefono e WhatsApp: <a href="tel:+393760918337">+39 376 091 8337</a></li>
+      </ul>
+      <p>Il Titolare non ha nominato un Responsabile della protezione dei dati (DPO), non essendone obbligato ai sensi dell'art. 37 del GDPR. Per qualsiasi questione relativa ai tuoi dati puoi scrivere direttamente all'indirizzo email indicato sopra.</p>
+    </div>
+
+    <div class="sec">
+      <h2><span class="n">02</span> Quali dati raccogliamo</h2>
+      <h3>Dati che ci fornisci tu</h3>
+      <p>Attraverso il modulo di contatto presente nella pagina "Prenota un tavolo" raccogliamo soltanto i dati che scrivi spontaneamente:</p>
+      <ul>
+        <li><strong>Nome</strong> (o nome e cognome);</li>
+        <li><strong>Indirizzo email</strong>;</li>
+        <li><strong>Numero di telefono</strong> (facoltativo);</li>
+        <li><strong>Contenuto del messaggio</strong>, comprese le eventuali informazioni sulla prenotazione (giorno, orario, numero di persone).</li>
+      </ul>
+      <p>Se ci contatti per telefono o su WhatsApp, trattiamo il tuo numero e il contenuto della conversazione per il solo tempo necessario a gestire la richiesta.</p>
+      <h3>Dati raccolti automaticamente</h3>
+      <p>Come accade per qualunque sito web, i sistemi che lo ospitano registrano alcuni dati tecnici di navigazione (indirizzo IP, tipo di browser e di dispositivo, pagine visitate, data e ora). Se presti il consenso ai cookie statistici, questi dati alimentano anche le statistiche aggregate descritte al punto 07.</p>
+      <div class="box">
+        <p>Il sito <strong>non gestisce pagamenti</strong>, <strong>non richiede la creazione di account</strong> e <strong>non effettua profilazione</strong> né decisioni automatizzate. Non raccogliamo categorie particolari di dati personali (art. 9 GDPR): ti chiediamo perciò di non inserire nel messaggio informazioni delicate, comprese eventuali intolleranze o allergie, che è meglio comunicarci a voce o su WhatsApp al momento della prenotazione.</p>
+      </div>
+    </div>
+
+    <div class="sec">
+      <h2><span class="n">03</span> Perché li trattiamo e con quale base giuridica</h2>
+      <table class="tbl">
+        <tr><th>Finalità</th><th>Base giuridica</th></tr>
+        <tr><td>Rispondere alle richieste di informazioni e alle richieste di prenotazione inviate dal modulo di contatto, per telefono o su WhatsApp</td><td>Misure precontrattuali adottate su richiesta dell'interessato (art. 6.1.b GDPR) e legittimo interesse a dare riscontro (art. 6.1.f GDPR)</td></tr>
+        <tr><td>Garantire il funzionamento e la sicurezza del sito</td><td>Legittimo interesse del Titolare (art. 6.1.f GDPR)</td></tr>
+        <tr><td>Statistiche di navigazione in forma aggregata (Google Analytics 4)</td><td>Consenso dell'interessato (art. 6.1.a GDPR)</td></tr>
+        <tr><td>Visualizzazione della mappa Google Maps, che comporta cookie di terze parti</td><td>Consenso dell'interessato (art. 6.1.a GDPR)</td></tr>
+        <tr><td>Adempimento di obblighi di legge, contabili e fiscali</td><td>Obbligo legale (art. 6.1.c GDPR)</td></tr>
+      </table>
+      <p>Il conferimento dei dati è libero. I campi contrassegnati come obbligatori nel modulo sono però necessari per poterti rispondere: senza di essi non possiamo dare seguito alla richiesta.</p>
+    </div>
+
+    <div class="sec">
+      <h2><span class="n">04</span> Come e per quanto tempo li conserviamo</h2>
+      <p>I dati sono trattati con strumenti elettronici e con misure di sicurezza adeguate a prevenirne la perdita, gli usi illeciti o non autorizzati e gli accessi non consentiti. Vi accedono soltanto le persone autorizzate dal Titolare.</p>
+      <ul>
+        <li><strong>Messaggi del modulo di contatto e richieste di prenotazione</strong>: conservati per il tempo strettamente necessario a gestire la richiesta e, in ogni caso, non oltre <strong>24 mesi</strong> dall'ultimo contatto.</li>
+        <li><strong>Dati statistici di navigazione</strong>: conservati in forma aggregata secondo i periodi di conservazione impostati in Google Analytics 4 (massimo 14 mesi).</li>
+        <li><strong>Dati necessari ad adempiere obblighi di legge</strong>: conservati per i termini previsti dalla normativa applicabile.</li>
+      </ul>
+    </div>
+
+    <div class="sec">
+      <h2><span class="n">05</span> A chi possono essere comunicati</h2>
+      <p>I dati non sono diffusi e non sono ceduti a terzi per finalità commerciali. Possono essere trattati per nostro conto dai seguenti soggetti, in qualità di responsabili del trattamento o fornitori di servizi tecnici:</p>
+      <ul>
+        <li><strong>EMC Digital Solutions</strong> — realizzazione e gestione tecnica del sito (responsabile del trattamento);</li>
+        <li><strong>Google Ireland Ltd.</strong> — recapito dei messaggi del modulo (Google Apps Script e servizio di posta), statistiche di navigazione (Google Analytics 4) e visualizzazione della mappa (Google Maps);</li>
+        <li><strong>GitHub, Inc.</strong> — hosting delle pagine del sito;</li>
+        <li><strong>WhatsApp Ireland Ltd. (gruppo Meta)</strong> — soltanto se scegli di contattarci tramite WhatsApp, secondo le condizioni e l'informativa privacy del servizio;</li>
+        <li>professionisti, consulenti e autorità pubbliche, nei casi previsti dalla legge.</li>
+      </ul>
+      <p>Alcuni di questi fornitori possono trattare i dati anche al di fuori dell'Unione Europea: in tali casi il trasferimento avviene nel rispetto delle garanzie previste dal Capo V del GDPR (Clausole Contrattuali Standard e/o adesione al Data Privacy Framework UE-USA).</p>
+    </div>
+
+    <div class="sec">
+      <h2><span class="n">06</span> I tuoi diritti</h2>
+      <p>In qualsiasi momento puoi esercitare i diritti previsti dagli artt. 15-22 del GDPR:</p>
+      <ul>
+        <li><strong>accesso</strong> ai tuoi dati personali e alle informazioni sul trattamento;</li>
+        <li><strong>rettifica</strong> dei dati inesatti e integrazione di quelli incompleti;</li>
+        <li><strong>cancellazione</strong> dei dati ("diritto all'oblio"), nei casi previsti;</li>
+        <li><strong>limitazione</strong> del trattamento;</li>
+        <li><strong>portabilità</strong> dei dati che ci hai fornito;</li>
+        <li><strong>opposizione</strong> al trattamento fondato sul legittimo interesse;</li>
+        <li><strong>revoca del consenso</strong> in ogni momento, senza che ciò pregiudichi la liceità del trattamento effettuato prima della revoca.</li>
+      </ul>
+      <p>Per esercitarli è sufficiente scrivere a <a href="mailto:siciliainboccatrattoria@gmail.com">siciliainboccatrattoria@gmail.com</a>: risponderemo senza ingiustificato ritardo e comunque entro un mese dalla richiesta.</p>
+      <p>Hai inoltre il diritto di proporre reclamo al <strong>Garante per la protezione dei dati personali</strong> (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">www.garanteprivacy.it</a>) o all'autorità di controllo dello Stato in cui risiedi.</p>
+    </div>
+
+    <div class="sec">
+      <h2><span class="n">07</span> Cookie Policy</h2>
+      <p>I cookie sono piccoli file di testo che i siti visitati salvano sul tuo dispositivo. Qui sotto trovi esattamente quali usiamo e quando.</p>
+
+      <h3>Cookie tecnici e necessari</h3>
+      <p>Servono al funzionamento del sito e per questi <strong>non è richiesto il consenso</strong>. In particolare salviamo nella memoria locale del browser (<em>localStorage</em>) la tua scelta sui cookie, con la chiave <code>siciliainbocca-cookie-consent</code>, così da non riproporti il banner a ogni visita.</p>
+
+      <h3>Cookie statistici — Google Analytics 4</h3>
+      <p>Utilizziamo <strong>Google Analytics 4</strong> (Google Ireland Ltd.) per capire in forma aggregata e anonima come viene usato il sito: pagine più viste, provenienza geografica generica, tipo di dispositivo. Adottiamo la modalità <em>Google Consent Mode v2</em> con anonimizzazione dell'indirizzo IP e <strong>questi cookie vengono attivati soltanto dopo il tuo consenso</strong>, prestato con il pulsante "Accetta" del banner. Se scegli "Solo necessari" nessun cookie statistico viene installato. Puoi disattivare Google Analytics anche installando il <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">componente aggiuntivo del browser</a> fornito da Google.</p>
+
+      <h3>Cookie di terze parti — Google Maps</h3>
+      <p>La mappa che mostra dove siamo è fornita da Google Maps, che può installare cookie di terze parti. Per rispettare la tua privacy <strong>la mappa non viene caricata finché non presti il consenso</strong>: al suo posto trovi un riquadro che spiega il motivo e un pulsante "Mostra la mappa" per caricarla solo se lo desideri. In alternativa puoi sempre aprire l'indirizzo direttamente nell'app di navigazione che preferisci.</p>
+
+      <div class="box">
+        <p>Il sito <strong>non utilizza cookie di profilazione, pubblicitari o di marketing</strong> e non condivide dati con circuiti pubblicitari. I soli cookie non tecnici sono quelli statistici e quelli della mappa, entrambi subordinati al tuo consenso.</p>
+      </div>
+
+      <h3>Come gestire o revocare il consenso</h3>
+      <p>Puoi cambiare idea quando vuoi: è sufficiente cancellare i dati di navigazione di questo sito dalle impostazioni del browser (voce "Cookie e dati dei siti"). Alla visita successiva il banner ricomparirà e potrai fare una nuova scelta. Dalle stesse impostazioni puoi bloccare o eliminare i cookie in generale; tieni presente che disattivandoli alcune funzioni, come la visualizzazione della mappa, potrebbero non essere disponibili.</p>
+      <p>Le istruzioni dei browser più diffusi: <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">Chrome</a> · <a href="https://support.mozilla.org/it/kb/Attivare%20e%20disattivare%20i%20cookie" target="_blank" rel="noopener">Firefox</a> · <a href="https://support.apple.com/it-it/guide/safari/sfri11471/mac" target="_blank" rel="noopener">Safari</a> · <a href="https://support.microsoft.com/it-it/microsoft-edge" target="_blank" rel="noopener">Edge</a>.</p>
+    </div>
+
+    <div class="sec">
+      <h2><span class="n">08</span> Collegamenti ad altri siti e social network</h2>
+      <p>Il sito contiene collegamenti ai profili <strong>Facebook</strong> e <strong>Instagram</strong> della trattoria e a <strong>WhatsApp</strong>. Si tratta di semplici link: fino a quando non li apri, nessun dato viene trasmesso a questi servizi. Una volta aperti, i tuoi dati sono trattati secondo le informative privacy dei rispettivi gestori, sulle quali il Titolare non ha alcun controllo.</p>
+    </div>
+
+    <div class="sec">
+      <h2><span class="n">09</span> Modifiche a questa informativa</h2>
+      <p>Il Titolare si riserva di modificare o aggiornare questa informativa, anche in conseguenza di variazioni normative o di nuovi servizi attivati sul sito. Le modifiche sono pubblicate su questa pagina con l'indicazione della data di ultimo aggiornamento: ti invitiamo a consultarla periodicamente.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ======================= FOOTER ======================= -->
+<footer>
+  <div class="foot-top" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-logo">
+        <img src="img/logo.png" alt="Logo Sicilia in Bocca — Cucina Tipica Tradizionale" width="900" height="1037" loading="lazy">
+        <!-- Motto ufficiale del cliente (bio Facebook): citazione testuale, da NON riscrivere. -->
+        <p class="foot-motto">«Un rifugio di sapori autentici, tra fiori e profumi di casa; un piccolo luogo dove si mangia bene, sempre.»</p>
+        <p>Trattoria di cucina tipica tradizionale siciliana a Campobello di Licata (AG). I piatti della tradizione siciliana e campobellese, in un ambiente di pietra e legno.</p>
+        <div class="socials-f">
+          <a href="https://www.facebook.com/share/1DgD4YBudC/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1z"/></svg></a>
+          <a href="https://www.instagram.com/siciliainboccatrattoria/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://wa.me/393760918337" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.04z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <ul>
+          <li class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><a href="https://www.google.com/maps?q=Corso+Garibaldi+285,+Campobello+di+Licata+AG" target="_blank" rel="noopener">Corso Garibaldi 285, 92023 Campobello di Licata (AG)</a></li>
+          <li class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+393760918337">+39 376 091 8337</a></li>
+          <li class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2.6"/><path d="m3.6 6.6 8.4 6.2 8.4-6.2"/></svg><a href="mailto:siciliainboccatrattoria@gmail.com">siciliainboccatrattoria@gmail.com</a></li>
+          <li class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Lun · Mar · Mer · Ven — sera 19:00 – 24:00<br>Sab · Dom — pranzo dalle 12:30 e sera 19:00 – 24:00<br>Giovedì chiuso</span></li>
+        </ul>
+      </div>
+    </div>
+    <!-- DATI FISCALI DA CONFERMARE: ragione sociale, P.IVA e C.F. -->
+    <div class="foot-legal">Sicilia in Bocca Trattoria · [RAGIONE SOCIALE DA CONFERMARE] · P.IVA [DA CONFERMARE] · <a href="mailto:siciliainboccatrattoria@gmail.com">siciliainboccatrattoria@gmail.com</a></div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Sicilia in Bocca · Tutti i diritti riservati · <a href="privacy.html">Privacy &amp; Cookie</a></span>
+      <a class="emc-link" href="https://www.emcdigitalsolutions.it" target="_blank" rel="noopener">
+        Progettato e Sviluppato da
+        <svg width="48" height="16" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg" aria-label="EMC Digital Solutions"><defs>
+            <linearGradient id="emcBar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#B8890C"/><stop offset="1" stop-color="#F2C230"/></linearGradient>
+            <linearGradient id="emcTxt" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F7EFDC"/><stop offset=".5" stop-color="#E0C79A"/><stop offset="1" stop-color="#F0C419"/></linearGradient>
+          </defs><path d="M4,4 H24 L32,8 L24,12 H4 A4,4 0 0,1 4,4Z" fill="url(#emcBar)"/><path d="M4,15 H20 L28,19 L20,23 H4 A4,4 0 0,1 4,15Z" fill="url(#emcBar)" opacity="0.85"/><path d="M4,26 H24 L32,30 L24,34 H4 A4,4 0 0,1 4,26Z" fill="url(#emcBar)"/><text x="46" y="27" font-family="'Inter','Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="20" font-weight="700" fill="url(#emcTxt)" letter-spacing="3">EMC</text></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookieBanner">
+  <p>Usiamo cookie tecnici necessari al funzionamento del sito. Con il tuo consenso attiviamo i cookie statistici (Google Analytics) e carichiamo Google Maps (cookie di terze parti). Dettagli in questa pagina.</p>
+  <div class="cookie-actions">
+    <button class="ck-nec" data-cookie="necessary">Solo necessari</button>
+    <button class="ck-all" data-cookie="all">Accetta</button>
+  </div>
+</div>
+
+<script>
+/* ==========================================================================
+   PRIVACY — comportamenti di pagina (vanilla JS, nessuna libreria)
+   ========================================================================== */
+(function () {
+  'use strict';
+  var all = function (s) { return Array.prototype.slice.call(document.querySelectorAll(s)); };
+
+  /* anno di copyright: mai scritto a mano */
+  var yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* cookie banner + Consent Mode v2 (su questa pagina non c'è la mappa) */
+  var CK = 'siciliainbocca-cookie-consent';
+  var banner = document.getElementById('cookieBanner');
+
+  function chooseCookie(v) {
+    try { localStorage.setItem(CK, v); } catch (e) {}
+    if (banner) banner.classList.remove('show');
+    if (v === 'all' && typeof window.gtag === 'function') {
+      window.gtag('consent', 'update', { 'analytics_storage': 'granted' });
+    }
+  }
+
+  (function () {
+    var saved = null;
+    try { saved = localStorage.getItem(CK); } catch (e) {}
+    if (!saved && banner) banner.classList.add('show');
+  })();
+
+  all('[data-cookie]').forEach(function (b) {
+    b.addEventListener('click', function () { chooseCookie(b.getAttribute('data-cookie')); });
+  });
+})();
+</script>
+</body>
+</html>

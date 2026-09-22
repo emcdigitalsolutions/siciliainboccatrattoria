@@ -1,0 +1,21 @@
+{
+  "name": "Sicilia in Bocca — Trattoria",
+  "short_name": "Sicilia in Bocca",
+  "description": "Trattoria di cucina tipica tradizionale siciliana a Campobello di Licata (AG). Prenota per telefono o su WhatsApp.",
+  "lang": "it",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F7EFDC",
+  "theme_color": "#3A2015",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ],
+  "shortcuts": [
+    { "name": "Il menu", "url": "/menu.html" },
+    { "name": "Prenota un tavolo", "url": "/#prenota" }
+  ]
+}

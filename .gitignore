@@ -1,0 +1,12 @@
+# File interni — NON pubblicare
+BRIEF.md
+*.md
+_shots/
+images/
+stampa/
+_*.js
+
+# Sistema
+.DS_Store
+Thumbs.db
+node_modules/

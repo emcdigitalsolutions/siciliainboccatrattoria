@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sicilia in Bocca — Campobello di Licata (AG)
+     Dominio proposto e non ancora acquistato: siciliainboccacampobello.it
+     Aggiornare <lastmod> a ogni pubblicazione di contenuti nuovi. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://www.siciliainboccacampobello.it/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.siciliainboccacampobello.it/img/murale.jpg</image:loc>
+      <image:title>Il murale della finestra siciliana nella sala di Sicilia in Bocca</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.siciliainboccacampobello.it/img/lastra-sicilia.jpg</image:loc>
+      <image:title>La lastra di pietra a forma di Sicilia appesa in sala</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.siciliainboccacampobello.it/img/logo.png</image:loc>
+      <image:title>Logo Sicilia in Bocca — Cucina Tipica Tradizionale</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://www.siciliainboccacampobello.it/menu.html</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.siciliainboccacampobello.it/img/menu-legno.jpg</image:loc>
+      <image:title>La copertina in legno del menu di Sicilia in Bocca</image:title>
+    </image:image>
+  </url>
+
+  <!-- privacy.html è volutamente esclusa: è marcata noindex. -->
+
+</urlset>
