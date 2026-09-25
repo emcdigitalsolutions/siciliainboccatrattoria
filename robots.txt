@@ -72,4 +72,4 @@ User-agent: YouBot
 Allow: /
 
 # --- Sitemap ---
-Sitemap: https://www.siciliainboccacampobello.it/sitemap.xml
+Sitemap: https://www.siciliainboccatrattoria.it/sitemap.xml
