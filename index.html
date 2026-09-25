@@ -306,6 +306,7 @@ h1 em{font-family:'Caveat',cursive;font-style:normal;font-weight:700;color:var(-
 /* ---------- chi siamo ---------- */
 .about-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(34px,5vw,72px);align-items:center}
 .about-arch{aspect-ratio:3/3.9}
+.about-txt h2{font-size:clamp(31px,4.6vw,54px);margin-top:8px}
 .about-txt p{margin-top:18px;font-size:clamp(16px,1.35vw,18px);color:#4C3524}
 .about-txt p.first::first-letter{font-family:'Fraunces',serif;font-weight:900;font-size:3.3em;line-height:.82;
   float:left;margin:6px 12px 0 0;color:var(--peperone)}
@@ -342,6 +343,48 @@ h1 em{font-family:'Caveat',cursive;font-style:normal;font-weight:700;color:var(-
 .menu-panel .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(242,194,48,.14);border:1px solid rgba(242,194,48,.42);
   color:var(--limone);font-size:12.4px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:7px 15px;border-radius:999px;margin-top:22px}
 .menu-panel .btns{display:flex;gap:13px;flex-wrap:wrap;margin-top:26px}
+
+/* ---------- piatti (mosaico fotografico) ---------- */
+.piatti{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-flow:dense;gap:16px;margin-top:52px}
+.piatto{position:relative;display:block;overflow:hidden;border-radius:20px;aspect-ratio:3/4;background:var(--legno-scuro);
+  box-shadow:0 22px 44px -30px rgba(58,32,21,.85)}
+.piatto.big{grid-column:span 2;grid-row:span 2;aspect-ratio:auto;border-radius:var(--arco)}
+.piatto::after{content:"";position:absolute;inset:0;border-radius:inherit;border:1.5px solid rgba(251,243,224,.35);pointer-events:none}
+.piatto picture,.piatto img{display:block;width:100%;height:100%}
+.piatto img{object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.3,1)}
+.piatto:hover img{transform:scale(1.07)}
+.piatto figcaption{position:absolute;left:0;right:0;bottom:0;padding:46px 16px 14px;color:#FBF3E0;
+  background:linear-gradient(180deg,rgba(46,26,16,0),rgba(46,26,16,.9));font-family:'Fraunces',serif;font-weight:600;font-size:16.5px;line-height:1.2}
+.piatto figcaption small{display:block;font-family:'Caveat',cursive;font-weight:700;font-size:19px;color:var(--limone);margin-bottom:2px}
+.piatto.big figcaption{padding:70px 26px 24px;font-size:clamp(20px,2vw,27px)}
+.piatto.big figcaption small{font-size:24px}
+.piatti-nota{margin-top:18px;text-align:center;color:var(--muted);font-size:14.4px}
+
+/* ---------- il cortile (fascia a tutta larghezza) ---------- */
+.cortile{position:relative;min-height:clamp(520px,72vh,760px);display:flex;align-items:flex-end;overflow:hidden;color:#FBF3E0;isolation:isolate}
+.cortile .bg,.cortile .bg img{position:absolute;inset:0;width:100%;height:100%}
+.cortile .bg{z-index:-2}
+.cortile .bg img{object-fit:cover;object-position:50% 45%}
+.cortile::before{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(30,16,10,.05) 30%,rgba(30,16,10,.82) 100%),linear-gradient(90deg,rgba(30,16,10,.55),rgba(30,16,10,0) 60%)}
+.cortile .wrap{width:100%;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:end;padding-bottom:clamp(44px,6vw,80px)}
+.cortile .eyebrow{color:var(--limone)}
+.cortile h2{font-size:clamp(32px,4.8vw,58px);color:#FFF8E6;margin-top:8px;text-shadow:0 2px 24px rgba(0,0,0,.35)}
+.cortile p{margin-top:16px;max-width:560px;font-size:clamp(16px,1.35vw,18.5px);color:#F1E4C8}
+.cortile .inset{justify-self:end;width:min(100%,300px);border-radius:var(--arco);overflow:hidden;border:5px solid #FBF3E0;
+  box-shadow:0 30px 60px -20px rgba(0,0,0,.7);transform:rotate(2.5deg);aspect-ratio:3/4.2}
+.cortile .inset img{width:100%;height:100%;object-fit:cover;object-position:50% 70%}
+
+/* ---------- feste e ricorrenze ---------- */
+.feste{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(34px,5vw,70px);align-items:center}
+.feste-foto{position:relative}
+.feste-foto .main{border-radius:24px;overflow:hidden;box-shadow:var(--ombra);aspect-ratio:4/3}
+.feste-foto .main img{width:100%;height:100%;object-fit:cover}
+.feste-list{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.feste-list li{padding:8px 15px;border-radius:999px;background:var(--crema-chiara);border:1px solid rgba(184,137,12,.45);
+  font-weight:600;font-size:14.4px;color:var(--legno)}
+.feste h2{font-size:clamp(30px,3.7vw,46px);margin-top:8px}
+.feste .btn{margin-top:28px}
 
 /* ---------- galleria ---------- */
 .gallery{columns:3;column-gap:20px;margin-top:52px}
@@ -523,6 +566,11 @@ footer a:hover{color:var(--limone)}
   .menu-panel .ph{max-width:280px;margin:0 auto}
   .dishes{grid-template-columns:1fr}
   .gallery{columns:2}
+  .piatti{grid-template-columns:repeat(2,1fr);gap:12px}
+  .piatto.big{grid-row:span 1;aspect-ratio:4/3.4}
+  .cortile .wrap{grid-template-columns:1fr}
+  .cortile .inset{display:none}
+  .feste{grid-template-columns:1fr}
   .hero{padding:118px 0 60px}
   .hero-arch{aspect-ratio:3/3.1}
   .hero-badge{left:6px;bottom:16px}
@@ -537,6 +585,10 @@ footer a:hover{color:var(--limone)}
   .values{grid-template-columns:1fr}
   .hero-cta .btn{flex:1 1 100%}
   .gallery{columns:1}
+  .piatto figcaption{font-size:14.6px;padding:40px 12px 11px}
+  .piatto figcaption small{font-size:16.5px}
+  .cortile{min-height:560px}
+  .cortile .bg img{object-position:30% 45%}
   .foot-grid{grid-template-columns:1fr;gap:30px;padding:44px 0 30px}
   .lb-nav{width:42px;height:42px}.lb-prev{left:8px}.lb-next{right:8px}
   .lightbox{padding:18px}
@@ -576,6 +628,7 @@ footer a:hover{color:var(--limone)}
       <li><a href="#chisiamo">Chi siamo</a></li>
       <li><a href="#intavola">In tavola</a></li>
       <li><a href="menu.html">Menu</a></li>
+      <li><a href="#feste">Feste</a></li>
       <li><a href="#ambiente">L'ambiente</a></li>
       <li><a href="#dovesiamo">Dove siamo</a></li>
       <li class="solo-mobile"><a href="#prenota">Prenota</a></li>
@@ -651,13 +704,13 @@ footer a:hover{color:var(--limone)}
 <!-- ======================= CHI SIAMO ======================= -->
 <section class="sec" id="chisiamo">
   <div class="wrap about-grid">
-    <!-- SLOT FOTO: quando avremo una foto di Serafina Guarneri o della sala
-         apparecchiata, sostituire questa immagine mantenendo l'arco. -->
+    <!-- SLOT FOTO: quando avremo una foto di Serafina Guarneri, valutare se
+         metterla qui al posto della tavola apparecchiata, mantenendo l'arco. -->
     <div class="arch-wrap reveal">
       <figure class="arch about-arch">
         <picture>
-          <source srcset="img/cornice-scala.webp" type="image/webp">
-          <img src="img/cornice-scala.jpg" alt="Parete in pietra viva della trattoria con un quadro ovale in cornice barocca dorata e una scala a pioli antica decorata con rami secchi" width="1400" height="1867" loading="lazy" decoding="async">
+          <source srcset="img/tavola-imbandita.webp" type="image/webp">
+          <img src="img/tavola-imbandita.jpg" alt="Una tavolata apparecchiata nella sala in pietra viva di Sicilia in Bocca: tovaglia dorata, sottopiatti intrecciati, tovaglioli a fiocco, sedie impagliate e centrotavola di fiori bianchi" width="1200" height="1600" loading="lazy" decoding="async">
         </picture>
       </figure>
     </div>
@@ -704,8 +757,49 @@ footer a:hover{color:var(--limone)}
       <h2>Cosa si mangia da noi</h2>
       <p>«Cucina Tipica Tradizionale» è quello che c'è scritto sulla nostra insegna ed è esattamente quello che portiamo in tavola. Niente di più, niente di meno.</p>
     </div>
-    <!-- SLOT FOTO PIATTI: appena il cliente invierà le foto dei piatti,
-         inserirle qui sopra le tre card (griglia da 3 immagini in arco). -->
+    <div class="piatti reveal" aria-label="Alcuni dei nostri piatti">
+      <a class="piatto big" href="img/tagliere.jpg" aria-label="Ingrandisci: Sicilia in Bocca">
+        <picture><source srcset="img/tagliere.webp" type="image/webp"><img src="img/tagliere.jpg" alt="Il tagliere dell'antipasto Sicilia in Bocca su un tronco di legno: melanzane e zucchine grigliate, caponata, pomodori secchi, olive, formaggio al peperoncino, ricotta, salame, prosciutto crudo, frittata e sfizi fritti" width="1200" height="1600" loading="lazy" decoding="async"></picture>
+        <figcaption><small>Antipasto</small>Sicilia in Bocca</figcaption>
+      </a>
+      <a class="piatto" href="img/tagliatelle.jpg" aria-label="Ingrandisci: Tagliatelle Sicilia in Bocca">
+        <picture><source srcset="img/tagliatelle.webp" type="image/webp"><img src="img/tagliatelle.jpg" alt="Tagliatelle Sicilia in Bocca con prosciutto cotto e pomodori secchi, spolverate di prezzemolo, in un piatto bianco" width="900" height="1200" loading="lazy" decoding="async"></picture>
+        <figcaption><small>Primo</small>Tagliatelle Sicilia in Bocca</figcaption>
+      </a>
+      <a class="piatto" href="img/norma.jpg" aria-label="Ingrandisci: Pasta alla Norma">
+        <picture><source srcset="img/norma.webp" type="image/webp"><img src="img/norma.jpg" alt="Gnocchetti al pomodoro con melanzane, ricotta salata grattugiata e foglie di basilico fresco" width="900" height="1200" loading="lazy" decoding="async"></picture>
+        <figcaption><small>Primo</small>Pasta alla Norma</figcaption>
+      </a>
+      <a class="piatto" href="img/spaghetti-mare.jpg" aria-label="Ingrandisci: Spaghetti ai frutti di mare">
+        <picture><source srcset="img/spaghetti-mare.webp" type="image/webp"><img src="img/spaghetti-mare.jpg" alt="Spaghetti con vongole, calamari, pesce e pomodorini, con prezzemolo fresco" width="900" height="1599" loading="lazy" decoding="async"></picture>
+        <figcaption><small>Primo</small>Spaghetti ai frutti di mare</figcaption>
+      </a>
+      <a class="piatto" href="img/trippa.jpg" aria-label="Ingrandisci: Trippa al sugo">
+        <picture><source srcset="img/trippa.webp" type="image/webp"><img src="img/trippa.jpg" alt="Due piatti di trippa al sugo di pomodoro con formaggio grattugiato e prezzemolo, su un pavimento in marmo a mosaico" width="900" height="1599" loading="lazy" decoding="async"></picture>
+        <figcaption><small>Secondo</small>Trippa al sugo</figcaption>
+      </a>
+      <a class="piatto" href="img/stinco.jpg" aria-label="Ingrandisci: Stinco di maiale e purè">
+        <picture><source srcset="img/stinco.webp" type="image/webp"><img src="img/stinco.jpg" alt="Stinco di maiale al forno con il suo fondo di cottura, servito su un letto di purè di patate" width="900" height="1200" loading="lazy" decoding="async"></picture>
+        <figcaption><small>Secondo</small>Stinco di maiale e purè</figcaption>
+      </a>
+      <a class="piatto" href="img/stigliola.jpg" aria-label="Ingrandisci: Stigliola">
+        <picture><source srcset="img/stigliola.webp" type="image/webp"><img src="img/stigliola.jpg" alt="Stigliola, lo spiedino tipico siciliano arrotolato e arrostito, con spicchi di limone" width="900" height="1200" loading="lazy" decoding="async"></picture>
+        <figcaption><small>Secondo</small>Stigliola</figcaption>
+      </a>
+      <a class="piatto big" href="img/polpette.jpg" aria-label="Ingrandisci: Polpette al sugo">
+        <picture><source srcset="img/polpette.webp" type="image/webp"><img src="img/polpette.jpg" alt="Polpette al sugo di pomodoro con una foglia di basilico, servite in un tegamino di ghisa appoggiato sul menu con il logo di Sicilia in Bocca" width="1200" height="1600" loading="lazy" decoding="async"></picture>
+        <figcaption><small>Secondo</small>Polpette al sugo</figcaption>
+      </a>
+      <a class="piatto" href="img/tagliata.jpg" aria-label="Ingrandisci: Tagliata di vitello">
+        <picture><source srcset="img/tagliata.webp" type="image/webp"><img src="img/tagliata.jpg" alt="Tagliata di vitello su piastra in ghisa, coperta di rucola e scaglie di formaggio" width="900" height="1599" loading="lazy" decoding="async"></picture>
+        <figcaption><small>Secondo</small>Tagliata di vitello</figcaption>
+      </a>
+      <a class="piatto" href="img/focaccia-ripiena.jpg" aria-label="Ingrandisci: Focaccia ripiena">
+        <picture><source srcset="img/focaccia-ripiena.webp" type="image/webp"><img src="img/focaccia-ripiena.jpg" alt="Focaccia siciliana ripiena cotta al forno, tagliata a metà: dentro olive nere e pomodori secchi" width="900" height="1200" loading="lazy" decoding="async"></picture>
+        <figcaption><small>Dal forno</small>Focaccia ripiena</figcaption>
+      </a>
+    </div>
+    <p class="piatti-nota">Foto scattate nella nostra cucina. Alcuni piatti cambiano con la stagione e con il mercato: chiedici cosa c'è oggi.</p>
     <div class="dishes">
       <article class="dish reveal">
         <span class="num">01</span>
@@ -753,30 +847,109 @@ footer a:hover{color:var(--limone)}
     </div>
   </div>
 </section>
+<!-- ======================= IL CORTILE ======================= -->
+<section class="cortile" id="cortile">
+  <div class="bg">
+    <picture>
+      <source srcset="img/cortile-arco.webp" type="image/webp">
+      <img src="img/cortile-arco.jpg" alt="Il cortile di Sicilia in Bocca di sera visto dall'arco d'ingresso: tavoli apparecchiati, panche blu, un albero di agrumi, cesti di vimini, bouganville e festoni di lucine accese" width="2000" height="1126" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Il cortile</span>
+      <h2>Quando la sera è bella,<br>si mangia fuori</h2>
+      <p>Un cortile in pietra tra le case del centro, le lucine accese sopra i tavoli, le bouganville sui balconi. Si cena all'aperto, senza fretta, come nelle sere d'estate in paese.</p>
+    </div>
+    <figure class="inset reveal">
+      <picture>
+        <source srcset="img/calamari.webp" type="image/webp">
+        <img src="img/calamari.jpg" alt="Un piatto di calamari fritti con limone, servito sulla soglia della porta che si apre sul cortile illuminato" width="1000" height="1776" loading="lazy" decoding="async">
+      </picture>
+    </figure>
+  </div>
+</section>
+
+<!-- ======================= FESTE E RICORRENZE ======================= -->
+<section class="sec bg-pietra" id="feste">
+  <div class="wrap feste">
+    <div class="feste-foto reveal">
+      <div class="main">
+        <picture>
+          <source srcset="img/sala-festa.webp" type="image/webp">
+          <img src="img/sala-festa.jpg" alt="La sala in pietra viva allestita per una festa: tavolo dei confetti con torta, composizioni di gerbere e rose bianche, vasi dorati e una lunga tavola apparecchiata in oro e avorio" width="1600" height="1200" loading="lazy" decoding="async">
+        </picture>
+      </div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Le tue feste</span>
+      <h2>Il tuo giorno speciale,<br>a tavola da noi</h2>
+      <p style="margin-top:16px;color:var(--muted);font-size:clamp(16px,1.35vw,18.5px)">Comunioni, cresime, compleanni, anniversari: prepariamo la sala e la tavola per la tua festa, con il menu pensato insieme a te. Tu pensi agli invitati, al resto pensiamo noi.</p>
+      <ul class="feste-list">
+        <li>Prime comunioni</li><li>Cresime</li><li>Battesimi</li><li>Compleanni</li><li>Anniversari</li><li>Cene di gruppo</li>
+      </ul>
+      <a class="btn btn-wa" href="https://wa.me/393760918337?text=Ciao%20Sicilia%20in%20Bocca!%20Vorrei%20organizzare%20una%20festa.%20Occasione%3A%20___%20%C2%B7%20Data%3A%20___%20%C2%B7%20Invitati%3A%20___" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.82 11.82 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 0 0 1.51 5.26l-.999 3.648 3.978-1.04z"/></svg>
+        Organizza la tua festa
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ======================= L'AMBIENTE ======================= -->
 <section class="sec" id="ambiente">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="eyebrow">L'ambiente</span>
       <h2>Pietra, legno e un po' di Sicilia<br>su ogni parete</h2>
-      <p>Muri in pietra viva, travi di legno a vista, cornici dorate, cesti di fiori. C'è una finestra siciliana dipinta sul muro, affacciata su un paesaggio che non esiste ma che conosciamo tutti. E c'è una lastra di pietra a forma di Sicilia appesa in sala: in fondo, racconta già tutto.</p>
+      <p>Muri in pietra viva, travi di legno a vista, cornici dorate, cesti di fiori. C'è una finestra siciliana dipinta sul muro, affacciata su un paesaggio che non esiste ma che conosciamo tutti. E c'è una lastra di pietra a forma di Sicilia appesa in sala: in fondo, racconta già tutto. Fuori, un palazzo antico sul corso, un portone ad arco e il cortile con le lucine.</p>
       <div class="orn" aria-hidden="true"><i></i><svg viewBox="0 0 24 24" fill="none" stroke="#B8890C" stroke-width="1.6"><path d="M7 14a5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5z"/><path d="M12 9c0-2 1-3.5 3-4"/></svg><i style="transform:scaleX(-1)"></i></div>
     </div>
     <div class="gallery reveal">
+      <a class="gitem" href="img/facciata.jpg" aria-label="Ingrandisci: la facciata su Corso Garibaldi">
+        <picture><source srcset="img/facciata.webp" type="image/webp"><img src="img/facciata.jpg" alt="La facciata di Sicilia in Bocca di sera sull'angolo di Corso Garibaldi: palazzo color crema con balconi in ferro battuto, portale ad arco illuminato, insegna in legno e una freccia che indica l'ingresso" width="1600" height="901" loading="lazy" decoding="async"></picture>
+        <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+        <figcaption>La facciata su Corso Garibaldi</figcaption>
+      </a>
+      <a class="gitem" href="img/ingresso-arco.jpg" aria-label="Ingrandisci: l'ingresso: pietra, legno e la Sicilia sul muro">
+        <picture><source srcset="img/ingresso-arco.webp" type="image/webp"><img src="img/ingresso-arco.jpg" alt="Il portale ad arco in pietra aperto sulla sala: soffitto a travi di legno, lanterna in ferro battuto, bancone e la lastra di pietra a forma di Sicilia appesa alla parete" width="1080" height="1918" loading="lazy" decoding="async"></picture>
+        <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+        <figcaption>L'ingresso: pietra, legno e la Sicilia sul muro</figcaption>
+      </a>
       <a class="gitem" href="img/murale.jpg" aria-label="Ingrandisci: il murale con la finestra siciliana">
         <picture><source srcset="img/murale.webp" type="image/webp"><img src="img/murale.jpg" alt="Murale trompe-l'œil con una finestra siciliana dipinta, mattoni a vista e vasi di piante, con la scritta a mano Sicilia in Bocca sui vetri" width="1800" height="2391" loading="lazy" decoding="async"></picture>
         <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
         <figcaption>Il murale con la finestra siciliana</figcaption>
+      </a>
+      <a class="gitem" href="img/cortile.jpg" aria-label="Ingrandisci: il cortile al tramonto">
+        <picture><source srcset="img/cortile.webp" type="image/webp"><img src="img/cortile.jpg" alt="Il cortile in pietra di Sicilia in Bocca al tramonto: tavoli apparecchiati con tovaglie a quadri, panche blu, bouganville in fiore sui balconi e festoni di lucine accese" width="2000" height="1126" loading="lazy" decoding="async"></picture>
+        <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+        <figcaption>Il cortile al tramonto</figcaption>
+      </a>
+      <a class="gitem" href="img/trasi-ca-mangi.jpg" aria-label="Ingrandisci: «Trasi ca mangi»: il portone sul cortile">
+        <picture><source srcset="img/trasi-ca-mangi.webp" type="image/webp"><img src="img/trasi-ca-mangi.jpg" alt="Di sera, la lavagna «Trasi ca mangi» accanto a una botte di legno e il grande portone ad arco in pietra che porta al cortile" width="1080" height="1918" loading="lazy" decoding="async"></picture>
+        <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+        <figcaption>«Trasi ca mangi»: il portone sul cortile</figcaption>
       </a>
       <a class="gitem" href="img/travi-legno.jpg" aria-label="Ingrandisci: le travi di legno a vista">
         <picture><source srcset="img/travi-legno.webp" type="image/webp"><img src="img/travi-legno.jpg" alt="Soffitto della sala con travi di legno a vista, decorato con tralci di fiori bianchi" width="1400" height="1054" loading="lazy" decoding="async"></picture>
         <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
         <figcaption>Le travi di legno a vista</figcaption>
       </a>
+      <a class="gitem" href="img/ingresso-sera.jpg" aria-label="Ingrandisci: l'ingresso in una sera di festa">
+        <picture><source srcset="img/ingresso-sera.webp" type="image/webp"><img src="img/ingresso-sera.jpg" alt="L'ingresso ad arco in pietra di Sicilia in Bocca di sera, con due figuranti in abiti tradizionali siciliani colorati e piumati ad accogliere gli ospiti; sullo sfondo il cortile illuminato" width="1080" height="1920" loading="lazy" decoding="async"></picture>
+        <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+        <figcaption>L'ingresso, in una sera di festa</figcaption>
+      </a>
       <a class="gitem" href="img/lastra-sicilia.jpg" aria-label="Ingrandisci: la lastra di pietra a forma di Sicilia">
         <picture><source srcset="img/lastra-sicilia.webp" type="image/webp"><img src="img/lastra-sicilia.jpg" alt="Grande lastra di pietra naturale sagomata a forma di Sicilia, appesa alla parete della sala" width="1400" height="1054" loading="lazy" decoding="async"></picture>
         <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
         <figcaption>La lastra di pietra a forma di Sicilia</figcaption>
+      </a>
+      <a class="gitem" href="img/cortile-panche.jpg" aria-label="Ingrandisci: tavoli e panche blu sotto le lucine">
+        <picture><source srcset="img/cortile-panche.webp" type="image/webp"><img src="img/cortile-panche.jpg" alt="Il cortile di notte con tavoli in legno, panche blu e tavoli apparecchiati sotto i festoni di lucine, sullo sfondo un albero di agrumi" width="1080" height="1918" loading="lazy" decoding="async"></picture>
+        <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
+        <figcaption>Tavoli e panche blu sotto le lucine</figcaption>
       </a>
       <a class="gitem" href="img/cornice-scala.jpg" aria-label="Ingrandisci: cornice dorata e scala antica sulla pietra">
         <picture><source srcset="img/cornice-scala.webp" type="image/webp"><img src="img/cornice-scala.jpg" alt="Quadro ovale in cornice barocca dorata accanto a una scala a pioli antica, su muro in pietra viva" width="1400" height="1867" loading="lazy" decoding="async"></picture>
@@ -792,16 +965,6 @@ footer a:hover{color:var(--limone)}
         <picture><source srcset="img/cesto-vimini.webp" type="image/webp"><img src="img/cesto-vimini.jpg" alt="Cesto di vimini con edera e fiori appeso a una parete in pietra della trattoria" width="1400" height="1054" loading="lazy" decoding="async"></picture>
         <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
         <figcaption>Cesto di vimini ed edera sulla pietra</figcaption>
-      </a>
-      <a class="gitem" href="img/cestini-3.jpg" aria-label="Ingrandisci: cestini in fibra naturale con fiori secchi">
-        <picture><source srcset="img/cestini-3.webp" type="image/webp"><img src="img/cestini-3.jpg" alt="Due cestini in fibra naturale con fiori secchi, pigne ed eucalipto appesi accanto a un arco della sala" width="1200" height="904" loading="lazy" decoding="async"></picture>
-        <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
-        <figcaption>Cestini di fibra naturale e fiori secchi</figcaption>
-      </a>
-      <a class="gitem" href="img/menu-legno.jpg" aria-label="Ingrandisci: il menu in legno rilegato con la corda">
-        <picture><source srcset="img/menu-legno.webp" type="image/webp"><img src="img/menu-legno.jpg" alt="Il menu della trattoria: una copertina in legno rilegata con la corda, con logo e scritta «Le nostre proposte»" width="1200" height="1594" loading="lazy" decoding="async"></picture>
-        <span class="zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg></span>
-        <figcaption>Il menu in legno, rilegato con la corda</figcaption>
       </a>
     </div>
   </div>
@@ -856,10 +1019,10 @@ footer a:hover{color:var(--limone)}
             <li data-day="0"><span class="d">Domenica</span><span class="h">Pranzo dalle 12:30<br>Sera 19:00 – 24:00</span></li>
           </ul>
         </div>
-        <figure class="arch" style="margin-top:24px;border-radius:20px;box-shadow:0 22px 44px -32px rgba(58,32,21,.9)">
+        <figure class="arch" style="margin-top:24px;border-radius:20px;box-shadow:0 22px 44px -32px rgba(58,32,21,.9);aspect-ratio:4/5">
           <picture>
-            <source srcset="img/orari-insegna.webp" type="image/webp">
-            <img src="img/orari-insegna.jpg" alt="L'insegna in legno di Sicilia in Bocca con gli orari di apertura: sera dalle 19:00, giovedì chiuso, sabato e domenica anche a pranzo dalle 12:30" width="1080" height="1350" loading="lazy" decoding="async">
+            <source srcset="img/ingresso-insegna.webp" type="image/webp">
+            <img src="img/ingresso-insegna.jpg" alt="L'ingresso di Sicilia in Bocca di sera al civico 285 di Corso Garibaldi: portale ad arco in pietra, balcone in ferro battuto, due vasi di piante e l'insegna in legno «Sicilia in Bocca — Cucina siciliana tradizionale»" width="1080" height="1918" loading="lazy" decoding="async" style="object-position:50% 55%">
           </picture>
         </figure>
       </div>
@@ -972,6 +1135,8 @@ footer a:hover{color:var(--limone)}
           <li><a href="#chisiamo">Chi siamo</a></li>
           <li><a href="#intavola">In tavola</a></li>
           <li><a href="menu.html">Menu</a></li>
+          <li><a href="#cortile">Il cortile</a></li>
+          <li><a href="#feste">Feste e ricorrenze</a></li>
           <li><a href="#ambiente">L'ambiente</a></li>
           <li><a href="#faq">Domande frequenti</a></li>
           <li><a href="#prenota">Prenota un tavolo</a></li>
@@ -1236,7 +1401,7 @@ footer a:hover{color:var(--limone)}
 
   /* ---------- 10. lightbox galleria ---------- */
   (function () {
-    var links = $$('.gallery a.gitem');
+    var links = $$('.piatti a.piatto, .gallery a.gitem');
     var lb = document.getElementById('lightbox');
     var lbImg = document.getElementById('lbImg');
     var lbCount = document.getElementById('lbCount');
