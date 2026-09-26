@@ -8,6 +8,7 @@ Motto della casa: «Un rifugio di sapori autentici, tra fiori e profumi di casa;
 - Insegna: Sicilia in Bocca (nome esteso: Sicilia in Bocca Trattoria)
 - Payoff: Cucina Tipica Tradizionale
 - Titolare: Serafina Guarneri
+- Dati fiscali: ditta individuale Guarneri Serafina, insegna "Trattoria Rustica Sicilia in Bocca", P.IVA 02938700842
 - Tipologia: trattoria · ristorante di cucina siciliana tradizionale
 - Indirizzo: Corso Garibaldi 285, 92023 Campobello di Licata (AG), Sicilia, Italia
 - Coordinate: 37.2578, 13.9187
@@ -100,7 +101,6 @@ prenotare tavolo WhatsApp Agrigento, menu trattoria siciliana.
 - Anno di apertura del locale
 - Recensioni e valutazioni: la trattoria non ha ancora recensioni pubblicate
 - Numero di coperti, dehors, parcheggio dedicato
-- Ragione sociale e partita IVA
 
 ## Realizzazione
 Sito progettato e sviluppato da EMC Digital Solutions — https://www.emcdigitalsolutions.it
