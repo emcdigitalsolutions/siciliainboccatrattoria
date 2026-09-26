@@ -9,13 +9,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- ===================================================================
      Google Analytics 4 + Consent Mode v2
-     TODO EMC: sostituire G-XXXXXXXXXX con l'ID di misurazione GA4 reale.
-     Finché resta il segnaposto lo script NON viene caricato (nessuna 404).
+     Proprietà GA4 "siciliainboccatrattoria.it" (account EMC Digital Solution),
+     stream web "Sicilia in Bocca - sito". Lo script parte solo dopo il consenso.
      =================================================================== -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  var GA_ID = 'G-XXXXXXXXXX';
+  var GA_ID = 'G-JSWNSTNWPP';
   var _gaConsent = 'denied';
   try{ if(localStorage.getItem('siciliainbocca-cookie-consent')==='all') _gaConsent='granted'; }catch(e){}
   gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':_gaConsent,'wait_for_update':500});
