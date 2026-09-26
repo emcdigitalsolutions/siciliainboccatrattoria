@@ -5,7 +5,8 @@
 
 User-agent: *
 Allow: /
-Disallow: /privacy.html
+# privacy.html resta fuori dall'indice tramite <meta name="robots" content="noindex">
+# (non bloccarla qui: Google non vedrebbe il noindex)
 
 # --- Crawler AI / motori conversazionali: accesso consentito ---
 # Vogliamo che la trattoria sia citabile dagli assistenti quando qualcuno
