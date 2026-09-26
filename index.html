@@ -1090,12 +1090,9 @@ footer a:hover{color:var(--limone)}
         </div>
       </div>
 
-      <!-- Form contatti: endpoint condiviso EMC (Google Apps Script).
-           TODO EMC: aggiungere in `C:\workspace\_contact-form-api\Codice.js` la voce
-           SITES["siciliainbocca"] = { to:"siciliainboccatrattoria@gmail.com",
-           cc:"emcdigitalsolution@gmail.com" } e ripubblicare LO STESSO deployment
-           (clasp push -f && clasp deploy -i AKfycbxLCgN0...). Finché non è fatto,
-           i messaggi del form NON vengono recapitati. -->
+      <!-- Form contatti: endpoint condiviso EMC (Google Apps Script), voce
+           SITES["siciliainbocca"] → siciliainboccatrattoria@gmail.com + copia EMC
+           (attivo dal deploy @24 del 26/9/2026, testato con invio reale). -->
       <form class="form reveal" id="contactForm">
         <h3>Scrivici un messaggio</h3>
         <p class="sub">Preferisci l'email? Compila il modulo: ti rispondiamo appena possibile.</p>
